@@ -14,6 +14,7 @@ from tkinter.filedialog import askopenfilenames
 
 #6.0
 # Added exit button to program.
+# Added error handling for missing config.json files.
 
 #Global Set
 global SET
@@ -73,8 +74,17 @@ def start():
 # Calls get_achievement_data() once API call is successful to parse achievement data with the given API key for the indicated Achievement Set.
 def get_set_badges():
     change_directory()
-    with open('config.json') as f:
-        config = json.load(f)
+
+    try:
+
+        if not os.path.exists('config.json'):
+            raise FileNotFoundError()
+
+        with open('config.json') as f:
+            config = json.load(f)
+
+    except FileNotFoundError as e:
+        print_error(f'File config.json is missing in program directory. Please confirm the file is located within the directory and restart the application.', True)
 
     api_key = config["api_key"]
     username = config["username"]
@@ -297,9 +307,9 @@ def remove_badges():
 # param error = The error message to be printed.
 # param close = A flag which indicates if the error should cause the program to close for safety.
 def print_error(error, close):
-    print("Error: " + error)
+    print("\nError: " + error)
     if close:
-        input("Press any key to exit...")
+        input("Press any key to exit...\n")
         sys.exit()
 
 # Function input_handler()

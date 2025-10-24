@@ -18,7 +18,15 @@ Also Has the ability to collage your own badges straight from your computer into
    - Ensure not to delete the quotes accidentally. The updated fields should look like `"your_actual_api_key"` and `"your_username"`.
 
 6. **Save Config File**: Save the changes to the `config.json` file.
+   - If you need a default config file. Copy the contents of the code block below and insert it into a config.json file.
+   - From here you can then add your api_key and username.
 
+```ini
+{
+    "api_key": "",
+    "username": ""
+}
+```
 7. **Run Program**: Now, run the `RABadgeCollager.exe` program normally.
 
 8. **Troubleshooting**: If you encounter issues with API fetch, double-check that you have pasted your Web API Key correctly into the `config.json` file. If you're unsure about the file's layout, feel free to contact ADTempest on Retroachievement's Discord.
@@ -73,5 +81,13 @@ Link - https://numpy.org/install/
 # Notes:
 The program must be in an empty folder to ensure safe deletion of images. Note: Only badge images will be deleted.
 
+# Screenshots
+
+## Collage No Padding
+
+![Collage with no padding added.](/Screenshots/OLD.png)
 
 
+## Collage With Padding
+
+![Collage with no padding added.](/Screenshots/NEW.png)
