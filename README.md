@@ -13,9 +13,9 @@ Also Has the ability to collage your own badges straight from your computer into
 4. **Open Config File**: Open the `config.json` file included in the download folder with any text editor of your choice.
 
 5. **Update Configurations**:
-   - Replace the placeholder `"YOUR_API_KEY"` with your copied API key inside the quotes for the `"api_key"` field.
-   - Replace the placeholder `"YOUR_USERNAME"` with your Retroachievements username inside the quotes for the `"username"` field.
-   - Ensure not to delete the quotes accidentally. The updated fields should look like `"your_actual_api_key"` and `"your_username"`.
+   - Place your copied API key inside the quotes for the `"api_key"` field.
+   - Place your Retroachievements username inside the quotes for the `"username"` field.
+   - Ensure not to delete the quotes accidentally. The updated fields should look like `"your_actual_api_key"` and `"your_actual_username"`.
 
 6. **Save Config File**: Save the changes to the `config.json` file.
    - If you need a default config file. Copy the contents of the code block below and insert it into a config.json file.
