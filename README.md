@@ -29,16 +29,16 @@ Also Has the ability to collage your own badges straight from your computer into
 ```
 7. **Run Program**: Now, run the `RABadgeCollager.exe` program normally.
 
-8. **Troubleshooting**: If you encounter issues with API fetch, double-check that you have pasted your Web API Key correctly into the `config.json` file. If you're unsure about the file's layout, feel free to contact ADTempest on Retroachievement's Discord.
-
 ## Support
-
-If you encounter any difficulties during setup or usage, please don't hesitate to open an issue in this repository or contact ADTempest on Retroachievement's Discord for assistance.
+If you encounter issues with API fetch, double-check that you have pasted your Web API Key correctly into the `config.json` file. If you encounter any difficulties during setup or usage, please don't hesitate to open an issue in this repository or contact ADTempest on Retroachievement's Discord for assistance.
 
 # Usage
-The user chooses the mode they want to use:
-Mode 1 is collaging a badge set from the Retroachievement's site.
-Mode 2 is collaging a badge set from the users computer.
+
+1. Download the Executable (RABadgeCollager.exe) from the Releases page.
+2. Move the Executable into any empty Folder.
+3. Double click and Execute the program.
+4. Follow the prompts on the screen.
+5. Depending on the Mode the user will be left an image in the program directory with their desired collage.
 
 ## Mode 1
 The user enters in a valid game id from the site. 
@@ -69,14 +69,6 @@ Link - https://docs.python.org/3/library/os.html
 Link - https://pypi.org/project/opencv-python/
 ## Numpy
 Link - https://numpy.org/install/
-
-# Usage
-
-1. Download the Executable (RABadgeCollager.exe) from the Releases page.
-2. Move the Executable into any empty Folder.
-3. Double click and Execute the program.
-4. Follow the prompts on the screen.
-5. Depending on the Mode the user will be left an image in the program directory with their desired collage.
 
 # Notes:
 The program must be in an empty folder to ensure safe deletion of images. Note: Only badge images will be deleted.
